@@ -1,0 +1,63 @@
+{
+  "name": "egg-webpack2-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "a boilerplate",
+  "private": true,
+  "dependencies": {
+    "egg": "^1.0.0",
+    "egg-view-pug": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "@types/react": "^15.0.20",
+    "@types/react-dom": "^0.14.23",
+    "autod": "^2.7.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.0",
+    "egg-bin": "^3.1.0",
+    "egg-ci": "^1.5.0",
+    "egg-mock": "^3.2.0",
+    "eslint": "^3.18.0",
+    "eslint-config-egg": "^3.2.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-pug-plugin": "0.0.3",
+    "node-sass": "^4.5.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "supertest": "^3.0.0",
+    "ts-loader": "^2.0.3",
+    "tslib": "^1.6.0",
+    "tslint": "^4.5.1",
+    "tslint-loader": "^3.4.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "egg-bin dev & npm run build:dev",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "build:dev": "webpack --config ./build/webpack.config.dev.js -w --progress",
+    "build:prod": "webpack --config ./build/webpack.config.prod.js"
+  },
+  "ci": {
+    "version": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:Yoda/egg-webpack2-typescript-boilerplate.git"
+  },
+  "author": "BK <wb-hqb225606@alibaba-inc.com>",
+  "license": "ISC"
+}
