@@ -1,5 +1,5 @@
 {
-  "name": "egg-webpack2-typescript-boilerplate",
+  "name": "egg-react-mobx-webpack2-boilerplate",
   "version": "1.0.0",
   "description": "a boilerplate",
   "private": true,
@@ -56,8 +56,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.alibaba-inc.com:Yoda/egg-webpack2-typescript-boilerplate.git"
+    "url": "git@github.com:BoizZ/egg-react-mobx-webpack2-boilerplate.git"
   },
-  "author": "BK <wb-hqb225606@alibaba-inc.com>",
+  "author": "Heleth <bon.hoo@hotmail.com>",
   "license": "ISC"
 }
