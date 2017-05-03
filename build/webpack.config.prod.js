@@ -6,7 +6,7 @@ const config = require('./webpack.config')
 
 config.plugins = config.plugins.concat([
   new ExtractTextPlugin({
-    filename: '../public/css/[name].[hash].css',
+    filename: 'css/[name].[hash].css',
     disable: false,
   }),
 
@@ -17,6 +17,6 @@ config.plugins = config.plugins.concat([
   })
 ])
 
-config.output.filename = '../public/scripts/[name].[hash].js'
+config.output.filename = 'scripts/[name].[hash].js'
 
 module.exports = config
